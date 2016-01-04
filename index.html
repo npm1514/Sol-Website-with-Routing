@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="solSiteRouter">
+
+<head>
+	<title>Home - Sol Innovations Ltd.</title>
+	<!-- //Fill in page info' -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="home/home.css">
+
+	<!-- //Fill in styles sheet -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="images/BetterLogo.ico">
+</head>
+
+<body>
+	<header>
+		<div class="headtitle">
+			<div class="logodiv">
+				<a ui-sref="home" class="logolink">
+					<img class="logoimage" src="images/SoL-Logo.png">
+				</a>
+			</div>
+			<div class="sol">
+				<h1>SoL
+					<span class="sol-style">INNOVATIONS</span> Ltd. </h1>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="navwrap">
+				<a class="nav1" ui-sref="home">
+					<div class="navlink">
+						<p style="color: #a0ce4e">HOME</p>
+					</div>
+				</a>
+				<a class="nav2" ui-sref="about">
+					<div class="navlink">
+						<p>ABOUT</p>
+					</div>
+				</a>
+				<a class="nav3" ui-sref="services">
+					<div class="navlink">
+						<p>SERVICES</p>
+					</div>
+				</a>
+				<a class="nav4" ui-sref="quotation">
+					<div class="navlink">
+						<p>QUOTATION</p>
+					</div>
+				</a>
+				<a class="nav5" ui-sref="contact">
+					<div class="navlink">
+						<p>CONTACT</p>
+					</div>
+				</a>
+				<hr />
+			</div>
+		</div>
+		<div class="spacer"></div>
+	</header>
+
+	<div ui-view>
+
+	</div>
+
+	<footer>
+		<div class="copyright">
+			<p>Copyright 2015. www.sol-innovations.com. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="app.js"></script>
+	<script src="controller.js"></script>
+	<script src="home/homeCtrl.js"></script>
+	<script src="about/aboutCtrl.js"></script>
+	<script src="contact/contactCtrl.js"></script>
+	<script src="quotation/quotationCtrl.js"></script>
+	<script src="services/servicesCtrl.js"></script>
+</body>
+
+</html>

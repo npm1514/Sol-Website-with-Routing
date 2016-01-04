@@ -1,0 +1,19 @@
+.nav1:hover ~ hr {
+	margin-left:-80%;
+}
+
+.nav2:hover ~ hr {
+	margin-left:-60%;
+}
+
+.nav3:hover ~ hr {
+	margin-left:-40%;
+}
+
+.nav4:hover ~ hr {
+	margin-left:-20%;
+}
+
+hr {
+  left: 680px;
+}
