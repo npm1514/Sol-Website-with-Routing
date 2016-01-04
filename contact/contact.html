@@ -17,14 +17,14 @@
 				<p>or</p>
 				<p>Fill out the form below</p>
       </div>
-			<div class="quote-form" controller="mainCtrl">
-				<form class="quote" action="mailto:npmarucci@sol-innovations.com" method="post" enctype="text/plain">
+			<div class="quote-form">
+				<form >
 					<p>Name</p>
-					<input>
+					<input type="text" name="name" required placeholder="Please enter your name here.">
 					<p>E-mail</p>
-					<input ng-model="email">
+					<input type="email" name="email" required placeholder="Enter a valid email address.">
 					<p>Message</p>
-					<input id="input-message">
+					<textarea type="text" required placeholder="Type your message here."></textarea>
 					<br>
 					<button type="button" name="button">Submit</button>
 				</form>
