@@ -1,29 +1,29 @@
 angular.module('solSiteRouter', ['ui.router']).config(function($urlRouterProvider, $stateProvider) {
   $stateProvider
-    .state('home', {
+    .state('Home', {
       url: '/',
-      templateUrl: 'home/home.html',
-      controller: 'homeCtrl'
+      templateUrl: 'templates/home.html'
+      // controller: 'homeCtrl'
     })
-    .state("about", {
+    .state("About", {
       url: "/about",
-      templateUrl: "about/about.html",
-      controller: 'aboutCtrl'
+      templateUrl: "templates/about.html"
+      // controller: 'aboutCtrl'
     })
-    .state("contact", {
+    .state("Contact", {
       url: "/contact",
-      templateUrl: "contact/contact.html",
-      controller: 'contactCtrl'
+      templateUrl: "templates/contact.html"
+      // controller: 'contactCtrl'
     })
-    .state("quotation", {
+    .state("Quotation", {
       url: "/quotation",
-      templateUrl: "quotation/quotation.html",
-      controller: 'quotationCtrl'
+      templateUrl: "templates/quotation.html"
+      // controller: 'quotationCtrl'
     })
-    .state("services", {
+    .state("Services", {
       url: "/services",
-      templateUrl: "services/services.html",
-      controller: 'servicesCtrl'
+      templateUrl: "templates/services.html"
+      // controller: 'servicesCtrl'
     });
 
   $urlRouterProvider

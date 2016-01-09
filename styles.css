@@ -34,17 +34,21 @@ header h1, .righttext p, .banner4navs {
   font-size: 24px;
   line-height: 1.5;
 }
-.sol-style, .bannertext p, .lefttext p, .lefttext h3, .lefttext li, .quote-form p, .lefttext a:hover, .contact-button:hover {
+#sol-style, .bannertext p, .lefttext p, .lefttext h3, .lefttext li, .quote-form p, {
   color: #5C5C5C;
 }
+
+.lefttext a:hover, .contact-button:hover, .hofert h3:hover {
+  background-color: #5C5C5C;
+}
 .nav {
-  max-width: 940px;
+  width: 860px;
   height: 40px;
   margin: 0 auto;
   margin-top: 25px;
 }
 .navwrap {
-  max-width: 860px;
+  width: 860px;
   margin: 0 auto;
   height: 45px;
 }
@@ -52,30 +56,53 @@ header h1, .righttext p, .banner4navs {
   color: #2e2e2e;
 }
 .navlink {
-  width: 16%;
+  width: 160px;
   height: 40px;
-  margin: 0px 2% 6px 2%;
+  margin: 0px 5px 6px 5px;
   float: left;
 }
-.navlink:hover, .lefttext h2, .lefttext a, .sol {
+.navlink:hover, .lefttext h2, .lefttext a, .sol h1, .quote h2, .donate h2, .support-troops h2 {
   color: #a0ce4e;
 }
+
 .navlink p {
   text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 100%;
 }
+
 hr {
   height: .4rem;
-  width: 16%;
-  margin: 2%;
+  width: 160px;
+  margin: 5px;
   background: #a0ce4e;
   border: none;
   transition: .5s ease-in-out;
   position: relative;
   top: -10px;
 }
+
+.nav1:hover ~ hr {
+	left:0px;
+}
+
+.nav2:hover ~ hr {
+	left:170px;
+}
+
+.nav3:hover ~ hr {
+	left:340px;
+}
+
+.nav4:hover ~ hr {
+	left:510px;
+}
+
+.nav5:hover ~ hr {
+	left:680px;
+}
+
 .spacer {
   background-color: #fff;
   height: 1px;
@@ -146,7 +173,7 @@ hr {
   padding: 15px 20px 15px 20px;
 }
 .left-side {
-  max-width: 590px;
+  width: 580px;
   border-right: 1px solid #e6e6e6;
   padding: 30px 35px 40px 15px;
   float: left;
@@ -177,7 +204,7 @@ hr {
   text-align: center;
   font-weight: normal;
 }
-.lefttext h2, .lefttext a {
+.lefttext h2, .lefttext a, .quote h2, .donate h2, .support-troops h2 {
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
@@ -187,11 +214,16 @@ hr {
   font-weight: normal;
   line-height: 1.5;
 }
+
+.lefttext h2, .lefttext p{
+  text-align: justify;
+}
+
 .lefttext h3 {
   text-align: center;
 }
 .right-side {
-  max-width: 290px;
+  width: 290px;
   float: left;
   margin-left: 0;
 }
@@ -217,17 +249,17 @@ hr {
   width: 580px;
   border-radius: 5px;
   font-family: "Montserrat";
+  border: 2px inset #eeeeee;
 }
-
 .quote-form input {
-	height: 30px;
+  height: 30px;
+  width: 576px;
 }
-
 .quote-form textarea {
-	overflow: auto;
-	height: 130px;
+  overflow: auto;
+  height: 130px;
+  width: 572px;
 }
-
 .quote-form {
   margin-left: 5px;
 }
@@ -248,11 +280,25 @@ footer {
   height: 100px;
   clear: both;
 }
-.copyright {
-  padding-top: 40px;
-  padding-left: 10px;
+.footwrap {
+  height: 100%;
   width: 960px;
   margin: auto;
+}
+.copyright {
+  padding-top: 25px;
+  padding-left: 10px;
+  width: 630px;
+  margin: auto;
+  float: left;
+}
+.support-troops {
+  text-align: center;
+  width: 290px;
+}
+.support-troops img {
+  width: 150px;
+  margin-top: 50px;
 }
 .banner {
   background-image: url("../images/IMG_0551.JPG");
@@ -261,7 +307,7 @@ footer {
   margin-top: 15px;
 }
 .bannerwrap {
-  max-width: 940px;
+  width: 940px;
   height: 316px;
   margin: auto;
   padding-top: 100px;
@@ -337,9 +383,9 @@ footer {
   text-align: center;
 }
 .bottominfo-right {
-  width: 445px;
+  width: 425px;
   height: 400px;
-  padding: 20px;
+  padding: 10px 20px;
   float: right;
 }
 .bottominfo-right h1 {
@@ -347,36 +393,26 @@ footer {
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
+  text-align: justify;
+
 }
 .bottominfo-right p {
   color: #5c5c5c;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.5;
+  text-align: justify;
 }
-input:required:invalid, textarea:required:invalid {
-  border: 2px solid red;
-  -moz-box-shadow: none;
-  background-image: url(/images/invalid.png);
-  background-position: right top;
-  background-repeat: no-repeat;
+.hofert h3 {
+  width: 580px;
 }
-
-input:visited:valid {
-		border: 2px solid gray;
-}
-
-
-input:focus:invalid, textarea:focus:invalid {
-	border: 2px solid gray;
-}
-
 input:required:valid, textarea:required:valid {
   border: 2px solid green;
   background-image: url(/images/valid.png);
   background-position: right top;
   background-repeat: no-repeat;
 }
-.copyright p {
-  margin: 0;
+.donate {
+  text-align: center;
+  margin-top: 50px;
 }
