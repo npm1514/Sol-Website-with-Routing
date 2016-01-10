@@ -23,21 +23,22 @@ hr {
 					npmarucci@sol-innovations.com</p>
 				<h2>Request a free consultation today!</h2>
 				<p>Please call us at +1 (716) 450-2362 Monday through Friday, 9am to 5pm, Mountain Time</p>
-				<p>or</p>
+				<div class="or">or</div>
 				<p>Email us at npmarucci@sol-innovations.com</p>
-				<p>or</p>
+				<div class="or">or</div>
 				<p>Fill out the form below</p>
       </div>
 			<div class="quote-form">
-				<form >
+				<form ng-controller="emailCtrl">
 					<p>Name</p>
-					<input type="text" name="name" required placeholder="Please enter your name here.">
+					<input type="text" name="name" required placeholder="First and Last Name - Company" ng-model="name">
 					<p>E-mail</p>
-					<input type="email" name="email" required placeholder="Enter a valid email address.">
+					<input type="email" name="email" required placeholder="Enter a valid email address." ng-model="email">
 					<p>Message</p>
-					<textarea type="text" required placeholder="Type your message here."></textarea>
+					<textarea type="text" required placeholder="How may we help you?" ng-model="message"></textarea>
 					<br>
-					<button type="button" name="button">Submit</button>
+					<button type="button" name="button" ng-click="sendEmail(name, email, message)">Submit</button>
+					<email-dir responseMessage="responseMessage"></email-dir>
 				</form>
 			</div>
 		</div>
@@ -68,7 +69,7 @@ hr {
 				<div class="support-troops">
 					<a href="https://supportourtroops.org/" target="_blank"><img src="../images/support troops.png"/></a>
 					<h2>Help Support<br>
-						our Troops</h2>
+						Our Troops</h2>
 				</div>
 				<div class="donate">
 						<a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=sYs03Oa0uUSV0RBlnwTGiD1e0KqInMPBYWApBBmdKcqEkIKtn1QIdt4MFhK&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2" target="_blank">

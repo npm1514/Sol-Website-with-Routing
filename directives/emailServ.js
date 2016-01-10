@@ -15,13 +15,16 @@ angular.module("solSiteRouter").service("emailServ", function($http) {
                 'type': 'to'
               }],
               'autotext': 'true',
-              'subject': 'Customer Inquiry - ' + name + "@" + email,
+              'subject': 'Customer Inquiry - ' + name + " @ " + email,
+              'html': '<div> name </div><div> email </div>',
               'text': message
             }
           }
         })
-        .then(function(response) {
-          return response;
+        .then(function itWorked(response) {
+          return "Your email has been received. We will get back to you within the next 48 hours.";
+        }, function itDidntWork(response){
+          return "Woops! Something went wrong. Please contact us via email or give us a call.";
         });
     }
   };

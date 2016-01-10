@@ -61,7 +61,7 @@ header h1, .righttext p, .banner4navs {
   margin: 0px 5px 6px 5px;
   float: left;
 }
-.navlink:hover, .lefttext h2, .lefttext a, .sol h1, .quote h2, .donate h2, .support-troops h2, .thanks h1 {
+.navlink:hover, .lefttext h2, .lefttext a, .sol h1, .quote h2, .donate h2, .support-troops h2, .thanks h1, .emailResponse h1 {
   color: #a0ce4e;
 }
 
@@ -204,10 +204,11 @@ hr {
   text-align: center;
   font-weight: normal;
 }
-.lefttext h2, .lefttext a, .quote h2, .donate h2, .support-troops h2 {
+.lefttext h2, .lefttext a, .quote h2, .donate h2, .support-troops h2, .emailResponse h1 {
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
+
 }
 .lefttext p, .lefttext h3, .lefttext li, .quote-form p {
   font-size: 14px;
@@ -250,6 +251,7 @@ hr {
   border-radius: 5px;
   font-family: "Montserrat";
   border: 2px inset #eeeeee;
+  outline: none;
 }
 .quote-form input {
   height: 30px;
@@ -407,12 +409,33 @@ footer {
   width: 580px;
 }
 input:required:valid, textarea:required:valid {
-  border: 2px solid green;
+
   background-image: url(/images/valid.png);
   background-position: right top;
   background-repeat: no-repeat;
+  box-shadow: 0 0 5px #a0ce4e;
+  border: 2px solid #a0ce4e;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
 }
+
+input:required:invalid:focus, textarea:required:invalid:focus {
+  box-shadow: 0 0 5px red;
+  border: 2px solid red;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
 .donate {
   text-align: center;
   margin-top: 50px;
+}
+
+.or {
+  background-color: #a0ce4e;
+  opacity: .8;
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  text-align: center;
 }
