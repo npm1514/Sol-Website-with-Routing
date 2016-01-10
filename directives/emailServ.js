@@ -1,5 +1,5 @@
 angular.module("solSiteRouter").service("emailServ", function($http) {
-  var toUrl = 'npm1514@gmail.com';
+
   this.sendEmail = function(name, email, message) {
     if (name && email && message) {
       return $http({
@@ -8,17 +8,15 @@ angular.module("solSiteRouter").service("emailServ", function($http) {
           data: {
             'key': 'kLu16ufqZK6L8u1zYNyj6Q',
             'message': {
-              'from_email': email,
-              'to': {
-                'email': toUrl,
+              'from_email': 'npmarucci@sol-innovations.com',
+              'to': [{
+                'email': 'npm1514@gmail.com',
                 'name': 'Sol Innovations',
                 'type': 'to'
-              },
+              }],
               'autotext': 'true',
-              'subject': 'Customer Inquiry - ' + name,
-              'html': 'to Nick' +
-                'from ' + name +
-                message
+              'subject': 'Customer Inquiry - ' + name + "@" + email,
+              'text': message
             }
           }
         })
