@@ -16,7 +16,6 @@ angular.module("solSiteRouter").service("emailServ", function($http) {
               }],
               'autotext': 'true',
               'subject': 'Customer Inquiry - ' + name + " @ " + email,
-              'html': '<div> name </div><div> email </div>',
               'text': message
             }
           }
