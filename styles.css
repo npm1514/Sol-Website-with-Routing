@@ -416,14 +416,14 @@ input:required:valid, textarea:required:valid {
   box-shadow: 0 0 5px #a0ce4e;
   border: 2px solid #a0ce4e;
   border-radius: 5px;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 input:required:invalid:focus, textarea:required:invalid:focus {
   box-shadow: 0 0 5px red;
   border: 2px solid red;
   border-radius: 5px;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .donate {
