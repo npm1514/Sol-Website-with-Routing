@@ -61,7 +61,7 @@ header h1, .righttext p, .banner4navs {
   margin: 0px 5px 6px 5px;
   float: left;
 }
-.navlink:hover, .lefttext h2, .lefttext a, .sol h1, .quote h2, .donate h2, .support-troops h2 {
+.navlink:hover, .lefttext h2, .lefttext a, .sol h1, .quote h2, .donate h2, .support-troops h2, .thanks h1 {
   color: #a0ce4e;
 }
 

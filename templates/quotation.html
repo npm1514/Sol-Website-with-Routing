@@ -18,15 +18,16 @@ hr {
 				<p>Simply fill out the form and we will get back to you within 48 hours.</p>
       </div>
 			<div class="quote-form">
-				<form >
+				<form ng-controller="emailCtrl">
 					<p>Name</p>
-					<input type="text" name="name" required placeholder="First and Last Name - Company">
+					<input type="text" name="name" required placeholder="First and Last Name - Company" ng-model="name">
 					<p>E-mail</p>
-					<input type="email" name="email" required placeholder="Email Address">
+					<input type="email" name="email" required placeholder="Email Address" ng-model="email">
 					<p>Message</p>
-					<textarea type="text" required placeholder="Quotation Inquiry..."></textarea>
+					<textarea type="text" required placeholder="Quotation Inquiry..." ng-model="message"></textarea>
 					<br>
-					<button type="button" name="button">Submit</button>
+					<button type="button" name="button" ng-click="sendEmail(name, email, message)">Submit</button>
+					<email-dir responseMessage="responseMessage"></email-dir>
 				</form>
 			</div>
 		</div>
