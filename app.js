@@ -1,4 +1,5 @@
-angular.module('solSiteRouter', ['ui.router']).config(function($urlRouterProvider, $stateProvider) {
+angular.module('solSiteRouter', ['ui.router'])
+.config(function($urlRouterProvider, $stateProvider) {
   $stateProvider
     .state('Home', {
       url: '/',

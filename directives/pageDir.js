@@ -4,6 +4,6 @@ angular.module("solSiteRouter").directive('pageDir',function(){
     scope: {
       viewPage:'='
     },
-    template: '<link rel="shortcut icon" href="images/BetterLogo.ico"><title>{{viewPage}} - Sol Innovations Ltd.</title>'
+    template: '<title>{{viewPage}} - Sol Innovations Ltd.</title>'
   };
 });
