@@ -1,6 +1,9 @@
 angular.module("solSiteRouter").service("emailServ", function($http) {
 
   this.sendEmail = function(name, email, message) {
+    var mess = `<p> Name: ${name} </p>
+            <p> Email: ${email} </p>
+            <p> Message: ${message} </p>`;
     if (name && email && message) {
       return $http({
           method: 'POST',
@@ -15,8 +18,8 @@ angular.module("solSiteRouter").service("emailServ", function($http) {
                 'type': 'to'
               }],
               'autotext': 'true',
-              'subject': 'Customer Inquiry - ' + name + " @ " + email,
-              'text': message
+              'subject': 'Customer Inquiry - ' + name,
+              'html': mess
             }
           }
         })
