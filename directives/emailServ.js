@@ -13,7 +13,7 @@ angular.module("solSiteRouter").service("emailServ", function($http) {
             'message': {
               'from_email': 'npmarucci@sol-innovations.com',
               'to': [{
-                'email': 'npm1514@gmail.com',
+                'email': 'npmarucci@sol-innovations.com',
                 'name': 'Sol Innovations',
                 'type': 'to'
               }],
